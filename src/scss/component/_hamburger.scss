@@ -1,0 +1,55 @@
+.menu-hamburger,
+.menu-hamburger::before,
+.menu-hamburger::after {
+  content: '';
+  display: block;
+  background: $primary;
+  height: 3px;
+  width: 2em;
+  transition: all ease-in-out 200ms;
+  @include mq(lg){
+      display: none;
+  }
+}
+.menu-hamburger{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: 0;
+    @include mq(sm){
+        margin-top: 39px;
+    }
+    &:before{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    &:after{
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+.menu-hamburger {
+    &.open{
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        &:before{
+            display: none;
+        }
+        &:after{
+            -webkit-transform: translateY(-1px) rotate(-90deg);
+            transform: translateY(-1px) rotate(-90deg);
+        }
+    }
+}
+
+.menu-content{
+    &.sticky-top{
+        .menu-hamburger{
+            margin-top: 27px;
+            @include mq(sm){
+                margin-top: 39px;
+            }
+        }
+    }
+}

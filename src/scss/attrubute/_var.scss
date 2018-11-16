@@ -1,0 +1,56 @@
+// color
+$black:#000;
+$gray-90: #e6e6e6;
+$gray-80: #cccccc;
+$gray-70: #b3b3b3;
+$gray-60: #999999;
+$gray-50: #808080;
+$gray-40: #666666;
+$gray-30: #4d4d4d;
+$gray-20: #333333;
+$gray-10: #1a1a1a;
+$white:#fff;
+
+$body-color:    $white;
+$primary:       #0071bc !default;
+$secondary:     #00a99d !default;
+$third-color:   #444444;
+
+$text-color:    $third-color;
+
+$box-bg:    #f2f2f2;
+
+// bootstrap
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+$font-family-sans-serif:      "Microsoft JhengHei",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       'Deftone Stylus', 'Calibri Light', Arial, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+// transition-speed
+$transition-speed-slow:  1s;
+$transition-speed-normal:  600ms;
+$transition-speed-fast:  400ms;
+
+// padding
+$padding: 10px;
+
+$padd-large: $padding * 6;
+$padd-normal: $padding;
+$padd-small: $padding * 0.5;

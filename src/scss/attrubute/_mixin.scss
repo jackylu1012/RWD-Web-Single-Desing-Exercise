@@ -1,0 +1,24 @@
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+
+@mixin text-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    text-shadow: $x-axis $y-axis $blur $color;
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+@mixin on-event {
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+

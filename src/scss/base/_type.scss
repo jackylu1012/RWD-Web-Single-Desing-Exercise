@@ -1,0 +1,72 @@
+$h1-font-sizes:(
+    null: 32px,
+    $screen-md: 36px,
+    $screen-xl: 62px
+);
+$h2-font-sizes:(
+    null: 28px,
+    $screen-md: 28px, 
+    $screen-xl: 42px
+);
+$h3-font-sizes:(
+    null: 26px,
+    $screen-md: 24px,
+    $screen-xl: 34px
+);
+$h4-font-sizes:(
+    null: 22px,
+    $screen-md: 20px,
+    $screen-xl: 28px
+);
+$h5-font-sizes:(
+    null: 18px,
+    $screen-md: 20px,
+    $screen-xl: 24px
+);
+$h6-font-sizes:(
+    null: 16px
+);
+$p-font-sizes:(
+    null: 16px
+);
+
+@mixin font-size($fs-map) {
+    @each $fs-breakpoint,
+    $fs-font-size in $fs-map {
+        @if $fs-breakpoint==null {
+            font-size: $fs-font-size;
+        }
+        @else {
+            @media screen and (min-width: $fs-breakpoint) {
+                font-size: $fs-font-size;
+            }
+        }
+    }
+}
+
+h1, .h1 {
+    @include font-size($h1-font-sizes);
+    display: block;
+    color: $white;
+}
+h2, .h2 {
+    @include font-size($h2-font-sizes);
+    display: block;
+}
+h3, .h3 {
+    @include font-size($h3-font-sizes);
+    display: block;
+}
+h4, .h4 {
+    @include font-size($h4-font-sizes);
+}
+h5, .h5 {
+    @include font-size($h5-font-sizes);
+}
+h6, .h6 {
+    @include font-size($h6-font-sizes);
+}
+p {
+    @include font-size($p-font-sizes);
+    line-height: $line-height-base * 1.25;
+}
