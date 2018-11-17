@@ -1,0 +1,40 @@
+.text-content{
+    .title, .text{
+        color: $gray-40;
+    }
+    .text{
+        &.padd-r{
+            padding-right: 10px;
+        }
+    }
+    &.text-white{
+        .title, .text{
+            color: $white;
+        }
+    }
+}
+
+.text-align-items{
+    display: flex;
+    align-items: center;
+    .text-content{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+*{
+    &.padd-t{
+        padding-top: 45px;
+    }
+    &.padd-b{
+        padding-bottom: 45px;
+    }
+    &.padd-l{
+        padding-left: 100px;
+    }
+    &.padd-r{
+        padding-right: 100px;
+    }
+}

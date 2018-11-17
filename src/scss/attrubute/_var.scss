@@ -12,25 +12,39 @@ $gray-10: #1a1a1a;
 $white:#fff;
 
 $body-color:    $white;
-$primary:       #0071bc !default;
-$secondary:     #00a99d !default;
-$third-color:   #444444;
+
+$primary:       #2ebd59;
+$secondary:     #3f729b;
+$third-color:   #282b2f;
+
+$card-black:    #212227;
+
+$banner-box:    #42b7c8;
 
 $text-color:    $third-color;
 
-$box-bg:    #f2f2f2;
+$gray-box:    #f3f1ef;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "primary":       $primary,
+    "gray-box":      $gray-box,
+    "blue-box":      $secondary,
+    "darken-gray":   $third-color,
+  ),
+  $colors
+);
 
 // bootstrap
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
 
-$line-height-lg:              1.5 !default;
-$line-height-sm:              1.5 !default;
+$font-family-sans-serif:      'FiraSans-Thin', 'FiraSans-Regular', 'sans-serif', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace:       'FiraSans-Bold', 'Calibri Light', Arial, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-$font-family-sans-serif:      "Microsoft JhengHei",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-monospace:       'Deftone Stylus', 'Calibri Light', Arial, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
-
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
@@ -41,12 +55,16 @@ $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.5 !default;
+$line-height-base:            1.2;
 
 // transition-speed
 $transition-speed-slow:  1s;
 $transition-speed-normal:  600ms;
-$transition-speed-fast:  400ms;
+$transition-speed-fast:  200ms;
+
+$transition-fast:             all $transition-speed-fast ease-in-out !default;
+$transition-normal:           all $transition-speed-normal ease-in-out !default;
+$transition-slow:             all $transition-speed-fast ease-in-out !default;
 
 // padding
 $padding: 10px;
@@ -54,3 +72,4 @@ $padding: 10px;
 $padd-large: $padding * 6;
 $padd-normal: $padding;
 $padd-small: $padding * 0.5;
+

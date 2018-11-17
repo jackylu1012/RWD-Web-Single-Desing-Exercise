@@ -1,0 +1,29 @@
+.video-content{
+    position: relative;
+    .video-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 150px 135px 150px 80px;
+        background-color: $card-black;
+        z-index: 2;
+        .title, .sub-title{
+            color: $primary;
+        }
+        .sub-title{
+            padding-top: 10px;
+        }
+        .text{
+            color: $white;
+            line-height: 24px;
+            font-size: 16px;
+        }
+        .sub-title, .text{
+            font-family: 'FiraSans-Regular';
+        }
+    }
+    .video-img{
+        position: relative;
+        z-index: 1;
+    }
+}

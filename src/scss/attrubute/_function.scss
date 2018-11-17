@@ -1,4 +1,16 @@
 // 圖片路徑 #{$img-url} url('#{$img-url}/banner1.jpg');
-$img-url: '~/project/surf/html-template/images';
+// $img-url: '~/project/surf/html-template/images';
+$img-url: '~/images';
 // $font-url: '~/project/surf/html-template/fonts';
-$font-url: '~/lu/website/surf/fonts';
+// $font-url: '~/lu/website/surf/fonts';
+$font-url: '~/fonts';
+
+@each $name,
+$color in $colors {
+    .color-#{$name} {
+        color: $color;
+    }
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}

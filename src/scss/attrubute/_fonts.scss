@@ -1,0 +1,101 @@
+// FiraSans-Bold
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.eot"); /* IE9 Compat Modes */
+    src: url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.otf") format("opentype"), /* Open Type Font */
+      url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.svg") format("svg"), /* Legacy iOS */
+      url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.woff") format("woff"), /* Modern Browsers */
+      url("#{$font-url}/FiraSans-Bold/FiraSans-Bold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: 'FiraSans-Light';
+    src: url("#{$font-url}/FiraSans-Light/FiraSans-Light.eot"); /* IE9 Compat Modes */
+    src: url("#{$font-url}/FiraSans-Light/FiraSans-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("#{$font-url}/FiraSans-Light/FiraSans-Light.otf") format("opentype"), /* Open Type Font */
+      url("#{$font-url}/FiraSans-Light/FiraSans-Light.svg") format("svg"), /* Legacy iOS */
+      url("#{$font-url}/FiraSans-Light/FiraSans-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("#{$font-url}/FiraSans-Light/FiraSans-Light.woff") format("woff"), /* Modern Browsers */
+      url("#{$font-url}/FiraSans-Light/FiraSans-Light.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.eot"); /* IE9 Compat Modes */
+    src: url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.otf") format("opentype"), /* Open Type Font */
+      url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.svg") format("svg"), /* Legacy iOS */
+      url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.woff") format("woff"), /* Modern Browsers */
+      url("#{$font-url}/FiraSans-Regular/FiraSans-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+  /* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "FiraSans-Thin";
+    src: url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.eot"); /* IE9 Compat Modes */
+    src: url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.otf") format("opentype"), /* Open Type Font */
+      url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.svg") format("svg"), /* Legacy iOS */
+      url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.woff") format("woff"), /* Modern Browsers */
+      url("#{$font-url}/FiraSans-Thin/FiraSans-Thin.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+// icon
+@font-face {
+    font-family: 'icomoon';
+    src:  url('#{$font-url}/icomoon/icomoon.eot?qqf000');
+    src:  url('#{$font-url}/icomoon/icomoon.eot?qqf000#iefix') format('embedded-opentype'),
+      url('#{$font-url}/icomoon/icomoon.ttf?qqf000') format('truetype'),
+      url('#{$font-url}/icomoon/icomoon.woff?qqf000') format('woff'),
+      url('#{$font-url}/icomoon/icomoon.svg?qqf000#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-play:before {
+    content: "\ea1c";
+  }
+  .icon-arrow-right:before {
+    content: "\ea3c";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-spotify:before {
+    content: "\ea94";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  

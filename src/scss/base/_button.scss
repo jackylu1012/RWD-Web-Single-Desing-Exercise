@@ -1,0 +1,43 @@
+.btn{
+    display: inline-block;
+    padding: 14px 20px;
+    border-radius: 50px;
+    border: 2px solid $white;
+    color: $white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: $font-family-monospace;
+    letter-spacing: 5px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: $transition-fast;
+    @include on-event{
+        background-color: $white;
+        color: $secondary;
+    }
+    &-green{
+        border-color: $primary;
+        color: $primary;
+        letter-spacing: 2px;
+        @include on-event{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+    &-white{
+        @include on-event{
+            color: $white;
+        }
+    }
+    &-white-green{
+        @include on-event{
+            color: $primary;
+        }
+    }
+    &-white-gray{
+        @include on-event{
+            color: $third-color;
+        }
+    }
+}

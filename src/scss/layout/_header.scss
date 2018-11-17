@@ -1,0 +1,14 @@
+.header{
+    position: relative;
+    width: 100%;
+    .topnav{
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+        z-index: 10;
+    }
+}

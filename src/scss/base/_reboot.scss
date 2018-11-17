@@ -15,7 +15,6 @@ body {
     margin: 0;
     font-family: $font-family-base;
     font-size: $font-size-base;
-    font-weight: $font-weight-base;
     line-height: $line-height-base;
     color: $gray-20;
     text-align: left;
@@ -76,8 +75,8 @@ strong {
     font-weight: bolder;
 }
 
-small {
-    font-size: 80%;
+small, .small {
+    font-size: 75%;
 }
 
 a {
@@ -129,4 +128,13 @@ input[type="month"] {
 textarea {
     overflow: auto;
     resize: vertical;
+}
+
+::selection {
+	background: $primary;
+	color: #fff;
+}
+::-moz-selection{
+    background: $primary;
+	color: #fff;
 }

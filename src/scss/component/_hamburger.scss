@@ -1,24 +1,26 @@
+.hamburger-menu{
+    width: 46px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    outline: 0;
+}
+
 .menu-hamburger,
 .menu-hamburger::before,
 .menu-hamburger::after {
   content: '';
   display: block;
-  background: $primary;
+  background: $gray-10;
   height: 3px;
   width: 2em;
-  transition: all ease-in-out 200ms;
-  @include mq(lg){
-      display: none;
-  }
+  transition: $transition-slow;
 }
 .menu-hamburger{
-    float: right;
     margin-top: 30px;
-    cursor: pointer;
-    outline: 0;
-    @include mq(sm){
-        margin-top: 39px;
-    }
+    margin-left: 7px;
+    margin-bottom: 10px;
+    
     &:before{
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);

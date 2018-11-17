@@ -1,0 +1,34 @@
+.banners{
+    position: relative;
+    z-index: 1;
+    .banner-text{
+        position: absolute;
+        width: 100%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        z-index: 2;
+        .text{
+            padding-top: 30px;
+        }
+    }
+    .banner-img{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &:after{
+            position: absolute;
+            top: 0;
+            display: block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(129deg, $banner-box 41%, rgba($white,0) 0%); 
+            background: -moz-linear-gradient(129deg, $banner-box 41%, rgba($white,0) 0%); 
+            background: -webkit-linear-gradient(129deg, $banner-box 41%, rgba($white,0) 0%); 
+            background: -o-linear-gradient(129deg, $banner-box 41%, rgba($white,0) 0%); 
+            opacity: .3;
+        }
+    }
+}

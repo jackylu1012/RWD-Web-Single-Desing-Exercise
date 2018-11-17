@@ -1,22 +1,22 @@
 $h1-font-sizes:(
-    null: 32px,
+    null: 54px,
     $screen-md: 36px,
-    $screen-xl: 62px
+    $screen-xl: 72px
 );
 $h2-font-sizes:(
     null: 28px,
-    $screen-md: 28px, 
-    $screen-xl: 42px
+    $screen-md: 26px, 
+    $screen-xl: 30px
 );
 $h3-font-sizes:(
-    null: 26px,
-    $screen-md: 24px,
-    $screen-xl: 34px
-);
-$h4-font-sizes:(
     null: 22px,
     $screen-md: 20px,
-    $screen-xl: 28px
+    $screen-xl: 24px
+);
+$h4-font-sizes:(
+    null: 17px,
+    $screen-md: 16px,
+    $screen-xl: 18px
 );
 $h5-font-sizes:(
     null: 18px,
@@ -27,7 +27,9 @@ $h6-font-sizes:(
     null: 16px
 );
 $p-font-sizes:(
-    null: 16px
+    null: 30px,
+    $screen-md: 24px,
+    $screen-xl: 36px
 );
 
 @mixin font-size($fs-map) {
@@ -47,26 +49,35 @@ $p-font-sizes:(
 h1, .h1 {
     @include font-size($h1-font-sizes);
     display: block;
-    color: $white;
+    font-family: $font-family-sans-serif;
 }
 h2, .h2 {
     @include font-size($h2-font-sizes);
     display: block;
+    font-family: 'FiraSans-Light';
 }
 h3, .h3 {
     @include font-size($h3-font-sizes);
     display: block;
+    font-family: $font-family-monospace;
+    letter-spacing: 2px;
 }
 h4, .h4 {
     @include font-size($h4-font-sizes);
+    display: block;
+    font-family: 'FiraSans-Regular';
 }
 h5, .h5 {
     @include font-size($h5-font-sizes);
+    display: block;
 }
 h6, .h6 {
     @include font-size($h6-font-sizes);
+    display: block;
 }
 p {
     @include font-size($p-font-sizes);
-    line-height: $line-height-base * 1.25;
+    display: block;
+    font-family: 'FiraSans-Light';
+    line-height: $line-height-base;
 }
