@@ -2,11 +2,19 @@
     display: block;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: $card-black
+    background-color: $card-black;
+    .col-xl-3{
+        margin-bottom: 60px;
+    }
 }
 
 .footer-text{
-    padding-right: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include mq(lg){
+        padding-left: 0;
+        padding-right: 60px;
+    }
     .title{
         padding-bottom: 40px;
         color: $white;
@@ -17,6 +25,11 @@
         line-height: 24px;
         font-size: 16px;
         font-family: 'FiraSans-Light';
+    }
+    &.pr-0{
+        @include mq(lg){
+            padding-right: 0;
+        }
     }
     .copyright{
         padding-top: 20px;
@@ -83,4 +96,13 @@
     & + .footer-text{
         padding-top: 80px;
     }
+    &.margin-b{
+        @include mq(md){
+            margin-bottom: 60px;
+        }
+        @include mq(lg){
+            margin-bottom: 0;
+        }
+    }
 }
+

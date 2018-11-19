@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>網頁切版練習</title>
     <link rel="icon" type="image/jpg" href="./images/logo.jpg" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,700,800,900" rel="stylesheet"> -->
+    
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -15,10 +15,10 @@
         <section class="header">
             <div class="container-fluid container-0 topnav">
                 <div class="row no-gutters">
-                    <div class="col-4 offset-2">
-                        <a href="/"><img src="./images/logo.jpg" alt="logo"></a>
+                    <div class="col-5 offset-1 col-md-4 offset-md-2 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
+                        <a href="/" class="logo"><img src="./images/logo.jpg" alt="logo"></a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-5 col-xl-4">
                         <div class="hamburger-menu">
                             <span class="menu-hamburger"></span>
                             <span class="small">MENU</span>
@@ -27,26 +27,29 @@
                 </div>
             </div>
             <div class="banners">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 992px)" srcset="./images/banner-m.jpg" class="img-fluid">
+                        <img src="./images/banner.jpg" alt="banner" class="img-fluid">
+                    </picture>
+                </div>
                 <div class="container-fluid container-0 banner-text">
                     <div class="row no-gutters">
-                        <div class="col-md-10 offset-md-2">
+                        <div class="col-md-8 offset-md-2 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                             <h1 class="title">Amazing Dude.<br/>Amazing Life.</h1>
                             <h2 class="text">Welcome to the personal site of <span class="font-bold">John Doe.</span><br/>A professional skier and a musician.</h2>
                         </div>
                     </div>
-                </div>
-                <div class="banner-img">
-                    <img src="./images/banner.jpg" alt="banner" class="img-fluid">
                 </div>
             </div>
         </section>
         <!-- about -->
         <section class="container-fluid container-0 bg-gray-box">
             <div class="row no-gutters">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <img src="./images/about.jpg" alt="about" class="img-w100 img-fluid">
                 </div>
-                <div class="col-md-4 text-align-items">
+                <div class="col-lg-6 col-xl-4 text-align-items">
                     <div class="text-content padd-l">
                         <h3 class="title">Sed faucibus quis</h3>
                         <p class="text padd-t padd-r">Fusce bibendum luctus massa, ut tincidunt lectus tincidunt in. Nulla tristique ipsum vitae lacus ullamcorper, at dictum nunc scelerisque.</p>
@@ -58,31 +61,41 @@
         <section class="section container-fluid container-0">
             <div class="row no-gutters">
                 <div class="col-sm-6 col-lg-3">
-                    <img src="./images/gallery-1.jpg" alt="gallery" class="img-w100 img-fluid">
+                    <a href="./images/gallery-1.jpg" data-fancybox="gallery" data-caption="gallery-1">
+                        <img src="./images/gallery-1.jpg" alt="gallery" class="img-w100 img-fluid">
+                    </a>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <img src="./images/gallery-2.jpg" alt="gallery" class="img-w100 img-fluid">
+                    <a href="./images/gallery-2.jpg" data-fancybox="gallery" data-caption="gallery-2">
+                        <img src="./images/gallery-2.jpg" alt="gallery" class="img-w100 img-fluid">
+                    </a>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <img src="./images/gallery-3.jpg" alt="gallery" class="img-w100 img-fluid">
+                    <a href="./images/gallery-3.jpg" data-fancybox="gallery" data-caption="gallery-3">
+                        <img src="./images/gallery-3.jpg" alt="gallery" class="img-w100 img-fluid">
+                    </a>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <img src="./images/gallery-4.jpg" alt="gallery" class="img-w100 img-fluid">
+                    <a href="./images/gallery-4.jpg" data-fancybox="gallery" data-caption="gallery-4">
+                        <img src="./images/gallery-4.jpg" alt="gallery" class="img-w100 img-fluid">
+                    </a>
                 </div>
             </div>
         </section>
         <section class="bg-blue-box">
             <div class="container-fluid container-0">
                 <div class="row no-gutters">
-                    <div class="col-lg-4 offset-lg-2 text-align-items">
+                    <div class="col-md-6 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 text-align-items">
                         <div class="text-content text-white padd-r">
                             <h3 class="title">INSTAGRAM</h3>
                             <p class="text padd-t padd-b">Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis.</p>
                             <a href="#" class="btn">VIEW ON INSTAGRAM</a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <img src="./images/gallery-5.jpg" alt="gallery" class="img-w100 img-fluid">
+                    <div class="col-md-6 col-lg-3">
+                        <a href="./images/gallery-5.jpg" data-fancybox="gallery" data-caption="gallery-5">
+                            <img src="./images/gallery-5.jpg" alt="gallery" class="img-w100 img-fluid">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -90,36 +103,35 @@
         <!-- video -->
         <section class="container-fluid container-0 bg-darken-gray video-content">
             <div class="row no-gutters">
-                <div class="col-lg-3 offset-lg-3">
+                <div class="col-md-6 col-lg-6 col-xl-3 offset-xl-3">
                     <div class="video-text">
                         <h3 class="title">Self-Effacing Rage</h3>
                         <h4 class="sub-title">FT. Fascinating Collision </h4>
                         <p class="text padd-t padd-b">Director: James G. Rohrer Production Company: Sycamore Producer: Laura S. Carlton Executive Producer: Jack M. Heckart</p>
-                        <a href="#" class="btn btn-green">click to play<i class="icon icon-play"></i></a>
+                        <a class="btn btn-green" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">click to play<i class="icon icon-play"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-9 offset-3 video-img">
+                <div class="col-md-9 offset-md-3 col-lg-9 offset-lg-3 video-img">
                     <img src="./images/music-1.jpg" alt="music" class="img-w100 img-fluid">
                 </div>
             </div>
-            
         </section>
         <!-- SPOTIFY & ITUNES -->
         <section class="text-sort">
             <div class="container-fluid container-0">
                 <div class="row no-gutters">
-                    <div class="col-md-4 offset-md-2">
+                    <div class="col-md-6 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
                         <div class="text-content text-white padd-r">
                             <h3 class="title">SPOTIFY</h3>
                             <p class="text padd-t padd-b">Follow me, stream and add my songs to your Spotify playlist.</p>
-                            <a href="#" class="btn btn-white-green">FOLLOW ON SPOTIFY</a>
+                            <a href="https://www.spotify.com/tw/free/?utm_source=tw-zh_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_apac_tw_premiumbusiness_core_brand-free+contextual+text+exact+tw-zh+google&gclid=Cj0KCQiA28nfBRCDARIsANc5BFBBWAUZ0Bta46UiNY6a2ea9LwUkG3pIK_hV1FR8Q3Ef6Tt9FkqToE0aAnokEALw_wcB&gclsrc=aw.ds" target="_blank" class="btn btn-white-green">FOLLOW ON SPOTIFY</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-5 col-xl-4">
                         <div class="text-content text-white padd-l">
                             <h3 class="title">ITUNES</h3>
                             <p class="text padd-t padd-b">Buy and download my songs from iTunes.</p>
-                            <a href="#" class="btn btn-white-gray">buy from itunes</a>
+                            <a href="https://www.apple.com/tw/itunes/download/" target="_blank" class="btn btn-white-gray">buy from itunes</a>
                         </div>
                     </div>
                 </div>
@@ -130,15 +142,15 @@
             <div class="container-fluid container-0">
                 <div class="row no-gutters">
                     <div class="col-lg-8 offset-lg-2">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="footer-text">
+                        <div class="row no-gutters">
+                            <div class="col-xl-3">
+                                <div class="footer-text margin-b">
                                     <h4 class="title">AMAZING DUDE.<br/> AMAZING LIFE.</h4>
                                     <p class="text">Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-xl-3">
                                 <div class="footer-text">
                                     <h4 class="title">CONTACT ME</h4>
                                     <div class="contact-info">
@@ -182,14 +194,34 @@
                                     <a href="#"><img src="./images/logo.jpg" alt="logo"></a>
                                 </div>
                             </div>
-                            <div class="col-12 footer-text">
-                                <p class="copyright">Ⓒ2015. all rights reserved.</p>
+                            <div class="col-12">
+                                <div class="footer-text">
+                                    <p class="copyright">Ⓒ2015. all rights reserved.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <nav class="menu-content">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-10 offset-1 col-md-4 offset-md-6 hamburger-menu">
+                        <span class="menu-hamburger open"></span>
+                    </div>
+                    <ul class="col-12 menu">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">music</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="./js//bundle.js"></script>
 </body>
 </html>

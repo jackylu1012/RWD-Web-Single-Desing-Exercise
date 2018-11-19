@@ -2,14 +2,26 @@
     position: relative;
     z-index: 1;
     .banner-text{
-        position: absolute;
-        width: 100%;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -55%);
-        z-index: 2;
+        display: block;
+        padding: 30px 15px;
+        background: rgba(#70cad3, 1);
+        color: $white;
         .text{
             padding-top: 30px;
+        }
+        @include mq(md){
+            position: absolute;
+            width: 100%;
+            top: 65%;
+            left: 50%;
+            background: transparent;
+            color: $text-color;
+            transform: translate(-50%, -65%);
+            z-index: 2;
+        }
+        @include mq(xl){
+            top: 55%;
+            transform: translate(-50%, -55%);
         }
     }
     .banner-img{

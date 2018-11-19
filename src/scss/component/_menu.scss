@@ -1,0 +1,77 @@
+.menu-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba($primary, 1);
+    z-index: 0;
+    transition: height $transition-speed-normal;
+    &:after{
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(129deg, $black 41%, rgba($white,0) 0%); 
+        background: -moz-linear-gradient(129deg, $black 41%, rgba($white,0) 0%); 
+        background: -webkit-linear-gradient(129deg, $black 41%, rgba($white,0) 0%); 
+        background: -o-linear-gradient(129deg, $black 41%, rgba($white,0) 0%); 
+        opacity: .1;
+    }
+    &.fixed{
+        position: fixed;
+        padding-top: 80px;
+        height: 100%;
+        z-index: 100;
+        .hamburger-menu, .menu{
+            transition-delay: 200ms;
+            opacity: 1;
+            z-index: 10;
+        }
+    }
+    .hamburger-menu{
+        opacity: 0;
+        .menu-hamburger{
+            float: right;
+            background: $white;
+            &:before, &:after{
+                background: $white;
+            }
+        }
+    }
+    .menu{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transform: translateY(-50%);
+        opacity: 0;
+        li{
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
+            a{
+                text-transform: uppercase;
+                font-size: 2rem;
+                color: $white;
+                letter-spacing: 3px;
+                transition: $transition-slow;
+                @include on-event{
+                    font-size: 2.1rem;
+                    letter-spacing: 10px;
+                    text-decoration: underline;
+                }
+                @include mq(md){
+                    font-size: 3rem;
+                    @include on-event{
+                        font-size: 3.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

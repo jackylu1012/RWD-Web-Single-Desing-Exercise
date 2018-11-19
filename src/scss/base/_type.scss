@@ -1,21 +1,21 @@
 $h1-font-sizes:(
-    null: 54px,
-    $screen-md: 36px,
+    null: 36px,
+    $screen-md: 54px,
     $screen-xl: 72px
 );
 $h2-font-sizes:(
-    null: 28px,
-    $screen-md: 26px, 
+    null: 26px,
+    $screen-md: 28px, 
     $screen-xl: 30px
 );
 $h3-font-sizes:(
-    null: 22px,
-    $screen-md: 20px,
+    null: 20px,
+    $screen-md: 22px,
     $screen-xl: 24px
 );
 $h4-font-sizes:(
-    null: 17px,
-    $screen-md: 16px,
+    null: 16px,
+    $screen-md: 17px,
     $screen-xl: 18px
 );
 $h5-font-sizes:(
@@ -27,9 +27,9 @@ $h6-font-sizes:(
     null: 16px
 );
 $p-font-sizes:(
-    null: 30px,
-    $screen-md: 24px,
-    $screen-xl: 36px
+    null: 24px,
+    $screen-md: 30px,
+    $screen-xxl: 36px
 );
 
 @mixin font-size($fs-map) {
