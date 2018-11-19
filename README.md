@@ -1,6 +1,7 @@
 # RWD Single Web Cutting
-網頁切板練習-1
+RWD Single web Design Exercise
 
+Demo：<a href="http://jackylu.byethost7.com/lu/website/rwd-1/index.html" target="_blank">link</a>
 
-設計稿作者：Ari Wibowo<br/>
-設計稿：<a href="https://www.behance.net/gallery/32368903/Free-PSD-One-Page-Web-Design" target="_blank">連結</a>
+Design Author：Ari Wibowo<br/>
+Design File：<a href="https://www.behance.net/gallery/32368903/Free-PSD-One-Page-Web-Design" target="_blank">link</a>
